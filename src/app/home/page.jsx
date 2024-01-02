@@ -134,19 +134,7 @@ const Home = () => {
       <div className="sm:w-full sm:mt-0">
         <h1 className='text-normal text-center sm:text-center lg:text-left'>Hack Code 2.0</h1>
         <h2 className='lg:ml-0 text-center sm:text-center lg:text-left '>We are Technical Affairs IIITDM</h2>
-        <div className="flex justify-start sm:justify-center text-black font-semibold">
-          <div className="flex items-left lg:space-x-20 sm:flex-col sm:justify-center lg:flex-row">
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>7/11/23</p>
-            </div>
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>5 PM</p>
-            </div>
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>H05</p>
-            </div>
-          </div>
-        </div>
+        
         <div class='overflow-clip'>
           <p class='font-normal sm:text-sm  lg:text-left lg:ml-0 sm:text-center'>
             HackCode 2.0 serves as a platform to encourage enthusiastic minds to brainstorm on solutions for challenging issues from all over India. The unified motive of gathering all like-minded hackers to the institution is what led to the creation of the idea, the first of its kind. Well provide a platform for innovations, where developers can test and showcase their potential to the best of their abilities.
@@ -213,9 +201,9 @@ const Home = () => {
   </div>
   <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4 text-white pb-12">
     <div class="sm:w-1/2">
-    <h2 className='lg:ml-8'>Unveiling Tomorrow's Tech: Vashisht Annual Techfest</h2>
+    <h2 className='lg:ml-8'>Unveiling Tomorrow&apos;s Tech: Vashisht Annual Techfest</h2>
       <p className='lg:ml-8 font-normal'>
-      Vashisht is a much awaited three-day tech-fest that assessed participants in a variety of subjects, from robots to entrepreneurship, coding to designing. It inspired a love of technology, opening students' eyes to new avenues for creativity and drawing more than 3000+ pupils from all across the nation. <br></br>At Vashisht, we are more than just a festival; we are a movement. Our goal is to build a technically engaged community that thrives on technical activities, not merely for entertainment but as a means of community building, ideation, and sharing groundbreaking ideas.
+      Vashisht is a much awaited three-day tech-fest that assessed participants in a variety of subjects, from robots to entrepreneurship, coding to designing. It inspired a love of technology, opening students&apos; eyes to new avenues for creativity and drawing more than 3000+ pupils from all across the nation. <br></br>At Vashisht, we are more than just a festival; we are a movement. Our goal is to build a technically engaged community that thrives on technical activities, not merely for entertainment but as a means of community building, ideation, and sharing groundbreaking ideas.
       </p>
       <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
         <div><a href="http://www.vashisht.iiitdm.ac.in/" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
