@@ -213,12 +213,12 @@ const Home = () => {
   </div>
   <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4 text-white pb-12">
     <div class="sm:w-1/2">
-    <h2 className='lg:ml-8'>We have diversity in clubs</h2>
+    <h2 className='lg:ml-8'>Unveiling Tomorrow's Tech: Vashisht Annual Techfest</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
+      Vashisht is a much awaited three-day tech-fest that assessed participants in a variety of subjects, from robots to entrepreneurship, coding to designing. It inspired a love of technology, opening students' eyes to new avenues for creativity and drawing more than 3000+ pupils from all across the nation. <br></br>At Vashisht, we are more than just a festival; we are a movement. Our goal is to build a technically engaged community that thrives on technical activities, not merely for entertainment but as a means of community building, ideation, and sharing groundbreaking ideas.
       </p>
       <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className=' font-semibold text-normal text-black '>Know more</p></div>
+        <div><a href="http://www.vashisht.iiitdm.ac.in/" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
@@ -237,10 +237,7 @@ const Home = () => {
 {/* Sponsor section */}
 <div class=" text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-12">
   <div class="flex flex-col items-center justify-center gap-4 mt-8">
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-10" style={{ borderRadius: '10px' }}>
-      <div><p class='text-xs sm:text-sm'>Sponsors</p></div>
-    </div>
-    <h1 class="text-sm sm:text-lg md:text-xl lg:text-2xl">Our Past Sponsors</h1>
+    <h1 class="text-sm sm:text-lg md:text-xl lg:text-2xl">Our Sponsors</h1>
   </div>
   <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8">
     <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
