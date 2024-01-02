@@ -24,32 +24,34 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Cards section */}
-      <div className="flex flex-col items-center justify-center mt-8 space-y-4 pb-12">
-        <div className="flex justify-center items-center flex-col md:flex-row md:space-x-4 space-y-3 lg:space-x-8">
-          <CardWrapper title="Workshops" number="50+" />
-          <CardWrapper title="Techfests" number="5+" />
-          <CardWrapper title="Seminars" number="50+" />
-          <CardWrapper title="Rankings" number="10+" />
-          <CardWrapper title="Collaborations" number="20+" />
-        </div>
+     {/* Cards section */}
+     <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center items-center md:flex-nowrap md:space-x-4 p-12  lg:space-x-8">
+        <CardWrapper title="Technical Clubs" number="13" />
+        <CardWrapper title="Competitive Teams" number="6" />
+        <CardWrapper title="Esteemed Awards" number="10+" />
+        <CardWrapper title="Events annually" number="50+" />
+        <CardWrapper title="Sponsors" number="20+" />
       </div>
+    </div>
 
-  <div class="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-128 ">
-  <div class="flex flex-col items-center justify-center gap-4">
+
+
+  <div className="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-128 ">
+  <div className="flex flex-col items-center justify-center gap-4">
   <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
       <p className='text-xs sm:text-sm'>About</p>
     </div>
     <h1>All you need to know about us</h1>
   </div>
-  <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4">
-    <div class="sm:w-1/2">
-      <h2 className='lg:ml-8'>We are Technical Affairs IIITDM</h2>
+  <div className="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4">
+    <div className="sm:w-1/2">
+      <h2 className='lg:ml-8'>Discover Technical Excellence: Welcome to Technical Affairs at IIITDM</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
+      The Technical Affairs of Student Affairs Council at IIITDM Kancheepuram plays a dynamic role in fostering and overseeing all technical initiatives, events, and projects within the institute. Comprising dedicated coordinators, faculty, and student members, the council is ardently engaged in elevating the technological landscape of the institute through proactive management and promotion of various technical endeavors.
       </p>
-      <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className='text-normal font-semibold'>Know more</p></div>
+      <div className=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
+        <div><a href="/about" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
@@ -134,21 +136,9 @@ const Home = () => {
       <div className="sm:w-full sm:mt-0">
         <h1 className='text-normal text-center sm:text-center lg:text-left'>Hack Code 2.0</h1>
         <h2 className='lg:ml-0 text-center sm:text-center lg:text-left '>We are Technical Affairs IIITDM</h2>
-        <div className="flex justify-start sm:justify-center text-black font-semibold">
-          <div className="flex items-left lg:space-x-20 sm:flex-col sm:justify-center lg:flex-row">
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>7/11/23</p>
-            </div>
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>5 PM</p>
-            </div>
-            <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[150px] sm:w-auto flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-              <p className='text-xs sm:text-sm'>H05</p>
-            </div>
-          </div>
-        </div>
-        <div class='overflow-clip'>
-          <p class='font-normal sm:text-sm  lg:text-left lg:ml-0 sm:text-center'>
+        
+        <div className='overflow-clip'>
+          <p className='font-normal sm:text-sm  lg:text-left lg:ml-0 sm:text-center'>
             HackCode 2.0 serves as a platform to encourage enthusiastic minds to brainstorm on solutions for challenging issues from all over India. The unified motive of gathering all like-minded hackers to the institution is what led to the creation of the idea, the first of its kind. Well provide a platform for innovations, where developers can test and showcase their potential to the best of their abilities.
           </p>
         </div>
@@ -172,21 +162,20 @@ const Home = () => {
 {/* Clubs section */}
 
 
-<div class="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-12 mb-8">
-  <div class="flex flex-col items-center justify-center gap-4">
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
+<div className="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-12 mb-8">
+  <div className="flex flex-col items-center justify-center gap-4">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
       <div><p className='text-xs'>Clubs</p></div>
     </div>
     <h1>Technical clubs in IIITDM</h1>
   </div>
-  <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4">
-    <div class="sm:w-1/2">
+  <div className="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4">
+    <div className="sm:w-1/2">
     <h2 className='lg:ml-8'>We have diversity in clubs</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
-      </p>
-      <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className='text-normal'>Know more</p></div>
+      Dive into a realm of technical prowess at Technical Affairs, IIITDM Kancheepuram, where we take immense pride in hosting acclaimed technical clubs and teams renowned for their outstanding achievements on the international stage. Our vibrant community includes student chapters affiliated with prestigious institutions such as the American Society of Mechanical Engineers (ASME), Institute of Electrical and Electronics Engineers (IEEE), Optica (Optical Society of America), and GeeksforGeeks. These associations have not only garnered accolades but have also evolved into dynamic student research groups within our institute. Join us in celebrating the spirit of innovation, collaboration, and excellence that defines our technical landscape.      </p>
+      <div className=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
+        <div><a href="/clubs" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
@@ -205,21 +194,21 @@ const Home = () => {
 
 {/* Our Annual techfest Vashisht */}
 
-<div class="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-8 bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top]">
-  <div class="flex flex-col items-center justify-center gap-4">
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
+<div className="text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-8 bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top]">
+  <div className="flex flex-col items-center justify-center gap-4">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-2 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
       <div><p className='text-xs'>Fest</p></div>
     </div>
     <h1 className='text-white'>Our Annual Techfest Vashisht</h1>
   </div>
-  <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4 text-white pb-12">
-    <div class="sm:w-1/2">
-    <h2 className='lg:ml-8'>We have diversity in clubs</h2>
+  <div className="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4 text-white pb-12">
+    <div className="sm:w-1/2">
+    <h2 className='lg:ml-8'>Unveiling Tomorrow&apos;s Tech: Vashisht Annual Techfest</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
+      Vashisht is a much awaited three-day tech-fest that assessed participants in a variety of subjects, from robots to entrepreneurship, coding to designing. It inspired a love of technology, opening students&apos; eyes to new avenues for creativity and drawing more than 3000+ pupils from all across the nation. <br></br>At Vashisht, we are more than just a festival; we are a movement. Our goal is to build a technically engaged community that thrives on technical activities, not merely for entertainment but as a means of community building, ideation, and sharing groundbreaking ideas.
       </p>
-      <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className=' font-semibold text-normal text-black '>Know more</p></div>
+      <div className=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
+        <div><a href="http://www.vashisht.iiitdm.ac.in/" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
@@ -236,15 +225,23 @@ const Home = () => {
 </div>
 
 {/* Sponsor section */}
-<div class=" text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-12">
-  <div class="flex flex-col items-center justify-center gap-4 mt-8">
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-10" style={{ borderRadius: '10px' }}>
-      <div><p class='text-xs sm:text-sm'>Sponsors</p></div>
-    </div>
-    <h1 class="text-sm sm:text-lg md:text-xl lg:text-2xl">Our Past Sponsors</h1>
+<div className=" text-center sm:text-3xl md:text-4xl lg:text-5xl mt-8 mb-12">
+  <div className="flex flex-col items-center justify-center gap-4 mt-8">
+    <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl">Our Sponsors</h1>
   </div>
-  <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8">
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+  <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+      <div> 
+        <Image
+            src="/india_bank.png"
+            alt="Vector"
+            width={50}
+            height={50}
+          />
+        </div>
+    </div>
+
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> 
         <Image
             src="/vector.svg"
@@ -255,18 +252,7 @@ const Home = () => {
         </div>
     </div>
 
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
-      <div> 
-        <Image
-            src="/vector.svg"
-            alt="Vector"
-            width={50}
-            height={50}
-          />
-        </div>
-    </div>
-
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> 
         <Image
             src="/vector.svg"
@@ -276,7 +262,7 @@ const Home = () => {
           /></div>
     </div>
     
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
      <div> 
       <Image
             src="/vector.svg"
@@ -287,7 +273,7 @@ const Home = () => {
         </div>
     </div>
 
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
             src="/vector.svg"
             alt="Vector"
@@ -296,7 +282,7 @@ const Home = () => {
           /></div>
     </div>
     
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
             src="/vector.svg"
             alt="Vector"
@@ -305,7 +291,7 @@ const Home = () => {
           /></div>
     </div>
 
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
             src="/vector.svg"
             alt="Vector"
@@ -314,7 +300,7 @@ const Home = () => {
           /></div>
     </div>
     
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
             src="/vector.svg"
             alt="Vector"
@@ -323,7 +309,7 @@ const Home = () => {
           /></div>
     </div>
 
-    <div class="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
             src="/vector.svg"
             alt="Vector"
@@ -346,7 +332,7 @@ const Home = () => {
 
 const CardWrapper = ({ title, number }) => {
   return (
-    <Card className="[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-8 w-40 text-black flex flex-col justify-center items-center p-12  sm:w-1/2 md:w-1/2 lg:w-1/5" style={{ borderRadius: '10px' }}>
+    <Card className="[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-20 w-60 text-black flex flex-col justify-center items-center p-12  sm:w-1/2 md:w-1/2 lg:w-1/5" style={{ borderRadius: '10px' }}>
       <h1 className='text-center text-2xl'>{number}</h1>
       <p className='text-center'>{title}</p>
     </Card>

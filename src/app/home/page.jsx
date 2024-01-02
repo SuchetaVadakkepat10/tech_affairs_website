@@ -233,7 +233,7 @@ const Home = () => {
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> 
         <Image
-            src="/vector.svg"
+            src="/india_bank.png"
             alt="Vector"
             width={50}
             height={50}
@@ -244,7 +244,7 @@ const Home = () => {
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> 
         <Image
-            src="/vector.svg"
+            src="/tkw_logo.png"
             alt="Vector"
             width={50}
             height={50}
@@ -255,7 +255,7 @@ const Home = () => {
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> 
         <Image
-            src="/vector.svg"
+            src="/tlc_logo.png"
             alt="Vector"
             width={50}
             height={50}
@@ -265,9 +265,9 @@ const Home = () => {
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
      <div> 
       <Image
-            src="/vector.svg"
+            src="/gcpa_logo.png"
             alt="Vector"
-            width={50}
+            width={70}
             height={50}
           />
         </div>
@@ -275,7 +275,25 @@ const Home = () => {
 
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
-            src="/vector.svg"
+            src="/contentstack_logo.png"
+            alt="Vector"
+            width={70}
+            height={50}
+          /></div>
+    </div>
+    
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+      <div> <Image
+            src="/hdfc_logo.png"
+            alt="Vector"
+            width={80}
+            height={50}
+          /></div>
+    </div>
+
+    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
+      <div> <Image
+            src="/ggvs_logo.png"
             alt="Vector"
             width={50}
             height={50}
@@ -284,7 +302,7 @@ const Home = () => {
     
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
-            src="/vector.svg"
+            src="/cad_logo.png"
             alt="Vector"
             width={50}
             height={50}
@@ -293,25 +311,7 @@ const Home = () => {
 
     <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
       <div> <Image
-            src="/vector.svg"
-            alt="Vector"
-            width={50}
-            height={50}
-          /></div>
-    </div>
-    
-    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
-      <div> <Image
-            src="/vector.svg"
-            alt="Vector"
-            width={50}
-            height={50}
-          /></div>
-    </div>
-
-    <div className="rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-auto">
-      <div> <Image
-            src="/vector.svg"
+            src="/ashok_logo.png"
             alt="Vector"
             width={50}
             height={50}
