@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
 
@@ -14,8 +14,13 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="/" className="text-white">
-                  Logo
+                <a href="/home" className="text-white">
+                <Image
+              src="/nav_logo.png"
+              alt="Tech Affairs Logo"
+              width={60}
+              height={60}
+            />
                 </a>
               </div>
             </div>

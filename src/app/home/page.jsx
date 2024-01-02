@@ -44,12 +44,12 @@ const Home = () => {
   </div>
   <div class="flex flex-col sm:flex-row items-center text-left sm:gap-8 ml-4">
     <div class="sm:w-1/2">
-      <h2 className='lg:ml-8'>We are Technical Affairs IIITDM</h2>
+      <h2 className='lg:ml-8'>Discover Technical Excellence: Welcome to Technical Affairs at IIITDM</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
+      The Technical Affairs of Student Affairs Council at IIITDM Kancheepuram plays a dynamic role in fostering and overseeing all technical initiatives, events, and projects within the institute. Comprising dedicated coordinators, faculty, and student members, the council is ardently engaged in elevating the technological landscape of the institute through proactive management and promotion of various technical endeavors.
       </p>
       <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className='text-normal font-semibold'>Know more</p></div>
+        <div><a href="/about" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
