@@ -16,7 +16,7 @@
     "gradients": "^1.0.1",
     "next": "^14.0.3",
     "react": "^18",
-    "react-bootstrap": "^2.9.1",
+    "react-bootstrap": "^2.9.2",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-modal": "^3.16.1",

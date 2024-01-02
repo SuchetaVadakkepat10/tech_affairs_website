@@ -24,6 +24,7 @@ const Navbar = () => {
                 <a
                   href="/home"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                  style={{ textDecoration: 'none' }}
                 >
                   Home
                 </a>
@@ -31,6 +32,7 @@ const Navbar = () => {
                 <a
                   href="/clubs"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                  style={{ textDecoration: 'none' }}
                 >
                   Clubs
                 </a>
@@ -38,12 +40,14 @@ const Navbar = () => {
                 <a
                   href="/about"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                  style={{ textDecoration: 'none' }}
                 >
                   About
                 </a>
                 <a
                   href="/joy"
                   className="text-white hover:bg-blue-200 hover:text-white rounded-lg p-2"
+                  style={{ textDecoration: 'none' }}
                 >
                   Joy of giving
                 </a>
@@ -95,6 +99,7 @@ const Navbar = () => {
               <a
                 href="/home"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                style={{ textDecoration: 'none' }}
               >
                 Home
               </a>
@@ -102,6 +107,7 @@ const Navbar = () => {
               <a
                 href="/clubs"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                style={{ textDecoration: 'none' }}
               >
                 Clubs
               </a>
@@ -109,12 +115,14 @@ const Navbar = () => {
               <a
                 href="/about"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                style={{ textDecoration: 'none' }}
               >
                 About
               </a>
               <a
                 href="/joy"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
+                style={{ textDecoration: 'none' }}
               >
                 Joy of giving
               </a>
