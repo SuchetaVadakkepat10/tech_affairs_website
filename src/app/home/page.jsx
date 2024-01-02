@@ -183,10 +183,9 @@ const Home = () => {
     <div class="sm:w-1/2">
     <h2 className='lg:ml-8'>We have diversity in clubs</h2>
       <p className='lg:ml-8 font-normal'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus ante, consequat non elit non, posuere bibendum metus. Nullam at ex vitae est gravida convallis non nec nulla. Duis auctor auctor mauris, non fringilla massa consectetur a. Nullam vel diam eget lectus tincidunt varius in vitae nisi.
-      </p>
+      Dive into a realm of technical prowess at Technical Affairs, IIITDM Kancheepuram, where we take immense pride in hosting acclaimed technical clubs and teams renowned for their outstanding achievements on the international stage. Our vibrant community includes student chapters affiliated with prestigious institutions such as the American Society of Mechanical Engineers (ASME), Institute of Electrical and Electronics Engineers (IEEE), Optica (Optical Society of America), and GeeksforGeeks. These associations have not only garnered accolades but have also evolved into dynamic student research groups within our institute. Join us in celebrating the spirit of innovation, collaboration, and excellence that defines our technical landscape.      </p>
       <div class=" lg:ml-8 rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[120px] h-[50px] flex items-center justify-center p-2 box-border" style={{ borderRadius: '10px' }}>
-        <div><p className='text-normal'>Know more</p></div>
+        <div><a href="/clubs" className='font-semibold text-black' style={{ textDecoration: 'none' }}>Know More</a></div>
       </div>
     </div>
     
