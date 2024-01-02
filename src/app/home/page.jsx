@@ -72,9 +72,9 @@ const Home = () => {
 <div className="relative bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center mb-8">
       <div className="flex flex-col items-center justify-center gap-4 mt-8">
         <div className="sm:justify-center rounded-8xs bg-gradient-to-r from-[#acddf9] to-[#879cfd] w-[100px] flex items-center justify-center p-1 box-border h-10 mt-8" style={{ borderRadius: '10px' }}>
-          <p className='text-xs sm:text-sm'>Events</p>
+          <p className='text-xs sm:text-sm'>Achievements</p>
         </div>
-        <h1 className='text-normal text-white'>Know what is happening in tech around IIITDM</h1>
+        <h1 className='text-normal text-white'>Triumphs and Milestones: Celebrating Our Achievements</h1>
       </div>
       <div className="flex flex-col sm:flex-row items-center justify-between mt-8 sm:mx-4 sm:mb-12">
         <div className="sm:w-1/4 sm:justify-center sm:mb-8">
@@ -185,7 +185,7 @@ const Home = () => {
             src="/spinny.gif"
             alt="Vector"
             width={450}
-            height={300}
+            height={450}
           />
     </div> 
   </div>
