@@ -1,9 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import MemberCard from "../(components)/MemberCard";
+import React, { useState } from "react";
+import Image from "next/image";
+import DisclaimerModal from "../(components)/DisclaimerModal";
 
 const Home1 = () => {
+
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   const web_team = [{name:"Gokul",img:"#"},{name:"Sucheta",img:"Sucheta.jfif"},{name:"M Ashwinth Anbu",img:"/M_Ashwinth_Anbu.jpg"},{name:"Harshith B",img:"/Harshith_B.jpg"}];
   const frost_team= [{name:"Sibi",img:"/Sibi.jpg"},{name:"Anmol",img:"#"},{name:"Sugreev S",img:"#"},{name:"Prahaladh A R",img:"/Prahalad.jpg"},{name:"Rohan G",img:"#"}];
@@ -160,12 +174,12 @@ const Home1 = () => {
               <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text divalign">
                 <div className="flex flex-row gap-[26px]">
                   <div className="relative w-[138px] h-[103px]">
-                    <div className="absolute top-[0px] left-[0px] w-[138px] h-[103px]">
-                      <div className="absolute top-[0px] left-[0px] [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
+                    <div className="absolute top-[0px] left-[0px] w-[138px] h-[110px]">
+                      <div className="absolute top-[0px] left-[0px] [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[110px]" />
                       <b className="absolute top-[64px] left-[calc(50%_-_42px)]">
                       Dr. Sivaselvan B
                       </b>
-                      <div className="absolute top-[80px] left-[calc(50%_-_21px)] text-3xs">
+                      <div className="absolute top-[80px] left-[calc(50%_-_50px)] text-3xs">
                       Dean - Student Affairs
                       </div>
                     </div>
@@ -175,12 +189,12 @@ const Home1 = () => {
                       src="/image-38@2x.png"
                     />
                   </div>
-                  <div className="relative rounded-8xs w-[138px] h-[103px]">
-                    <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
+                  <div className="relative rounded-8xs w-[138px] h-[110px]">
+                    <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[110px]" />
                     <b className="absolute top-[64px] left-[calc(50%_-_47px)]">
                     Dr. Siva Prasad
                     </b>
-                    <div className="absolute top-[80px] left-[calc(50%_-_35px)] text-3xs">
+                    <div className="absolute top-[80px] left-[calc(50%_-_40px)] text-3xs">
                     A V S - PIC- Co-curricular Affairs
                     </div>
                     <img
@@ -189,12 +203,12 @@ const Home1 = () => {
                       src="#"
                     />
                   </div>
-                  <div className="relative rounded-8xs w-[138px] h-[103px]">
-                    <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
+                  <div className="relative rounded-8xs w-[138px] h-[110px]">
+                    <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[110px]" />
                     <b className="absolute top-[64px] left-[calc(50%_-_47px)]">
                       Dr. Parvathy Das
                     </b>
-                    <div className="absolute top-[80px] left-[calc(50%_-_35px)] text-3xs">
+                    <div className="absolute top-[80px] left-[calc(50%_-_40px)] text-3xs">
                     PIC - Co-curricular Affairs
                     </div>
                     <img
@@ -337,82 +351,200 @@ const Home1 = () => {
       </div>
 
 
-
-      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/footer@3x.png')] bg-cover bg-no-repeat bg-[top] foot">
-        <div className="flex flex-col items-start justify-start gap-[126px]">
-          <div className="flex flex-row items-start justify-start gap-[579px] sample">
-            <div className="flex flex-col items-start justify-start gap-[13px] textdiv">
-              <div className="">Tech affairs IIITDM</div>
-              <div className="relative text-left">
-                <p className="m-0">Lorem ipsum text about a paragraph on</p>
-                <p className="m-0">the creative and talented works done by</p>
-                <p className="m-0">tech affair.</p>
-              </div>
+      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:gap-10">
+        <div className="flex flex-col items-center md:items-start gap-6 md:w-2/6">
+          <div className="font-semibold text-whitesmoke">
+            <Image
+              src="/nav_logo.png"
+              alt="Tech Affairs Logo"
+              width={80}
+              height={80}
+            />
+          </div>
+          <div className="text-center md:text-left text-whitesmoke">
+            <p className="m-0 ml-0">
+              Elevating Technology At IIITDM Kancheepuram
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-start gap-6 text-whitesmoke md:w-4/6 md:gap-10">
+          {/* PC Version - Two Columns */}
+          <div className="hidden md:flex md:flex-row md:gap-10">
+            <div className="flex flex-col items-start gap-6 text-whitesmoke">
+              <div className="font-semibold">Innovation Grant and Support</div>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Advance_Request_Form.pdf"
+                download="Advance_Request_Form.pdf"
+              >
+                Advance Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Budget_Request_Form.pdf"
+                download="Budget_Request_Form.pdf"
+              >
+                Budget Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Reimbursement_Form.pdf"
+                download="Reimbursement_Form.pdf"
+              >
+                Reimbursement Form
+              </a>
             </div>
-            <div className="flex flex-row items-start justify-start gap-[120px] text-left font-inter links">
-              <div className="flex flex-col items-start justify-start gap-[13px]">
-                <div className="relative font-semibold text-center">
-                  Students
-                </div>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[13px]">
-                <div className="relative font-semibold text-center">
-                  Students
-                </div>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[13px]">
-                <div className="relative font-semibold text-center">
-                  Students
-                </div>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-                <a className="relative cursor-pointer">Link1</a>
-              </div>
+
+            <div className="flex flex-col items-start gap-6 text-whitesmoke">
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
+                download="SA_Tech_Advance_Settlement_Form.pdf"
+              >
+                Advance Settlement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
+                download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+              >
+                Asset Transform Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Non_Consumable_Indent.pdf"
+                download="SA_Tech_Non_Consumable_Indent.pdf"
+              >
+                Non Consumable Indent Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
+                download="SA_Tech_Temporary_Advance_Form.pdf"
+              >
+                Temporary Advance Form
+              </a>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-start gap-[11px] text-left font-inter">
-            <div className="relative box-border w-[1340px] h-px border-t-[1px] border-solid border-text-color line" />
-            <div className="w-[1339px] flex flex-col items-start justify-start p-2.5 box-border">
-              <div className="w-[1329px] flex flex-row items-center justify-start gap-[799px] last">
-                <div className="relative bottom-content">
-                  © Technical Affairs IIITDM. All rights reserved.
-                </div>
-                <div className="flex flex-row items-center justify-center gap-[18px] icons">
-                  <img
-                    className="relative w-8 h-8 overflow-hidden shrink-0"
-                    alt=""
-                    src="/instagram.svg"
-                  />
-                  <img
-                    className="relative w-8 h-8 overflow-hidden shrink-0"
-                    alt=""
-                    src="/linkedin.svg"
-                  />
-                  <img
-                    className="relative w-8 h-8 overflow-hidden shrink-0"
-                    alt=""
-                    src="/youtube.svg"
-                  />
-                  <img
-                    className="relative w-8 h-8 overflow-hidden shrink-0"
-                    alt=""
-                    src="/facebook.svg"
-                  />
-                </div>
-              </div>
+
+          {/* Mobile Version - Single Column */}
+          <div className="md:hidden">
+            <div className="flex flex-col items-start gap-6 text-whitesmoke">
+              <div className="font-semibold">Innovation Grant and Support</div>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Advance_Request_Form.pdf"
+                download="Advance_Request_Form.pdf"
+              >
+                Advance Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Budget_Request_Form.pdf"
+                download="Budget_Request_Form.pdf"
+              >
+                Budget Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Reimbursement_Form.pdf"
+                download="Reimbursement_Form.pdf"
+              >
+                Reimbursement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
+                download="SA_Tech_Advance_Settlement_Form.pdf"
+              >
+                Advance Settlement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+                download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+              >
+                Asset Transform Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
+                download="SA_Tech_Non_Consumable_Indent.pdf"
+              >
+                Non Consumable Indent Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
+                download="SA_Tech_Temporary_Advance_Form.pdf"
+              >
+                Temporary Advance Form
+              </a>
             </div>
+          </div>
+
+          <div className="flex flex-col items-start gap-6 text-whitesmoke">
+            <div className="font-semibold">I2R MakerSpace</div>
+            <a
+              className="cursor-pointer"
+              href="https://docs.google.com/document/d/1r8gTKgbhtiYPMCVVTHUTe97uFcEpFMG-e1pJwtALNEI/edit#heading=h.4hwppuotdne3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Access Form
+            </a>
           </div>
         </div>
       </div>
+      <hr className="border-t border-white w-full" />
+      <div className="text-center py-4 flex flex-col items-center justify-center lg:flex-row justify-between">
+        <p className="text-xs sm:text-sm lg:text-base text-whitesmoke">
+          © Technical Affairs IIITDM. All rights reserved.
+        </p>
+        <div className="flex gap-4 mt-2">
+          <button
+            className="cursor-pointer bg-transparent text-white text-[15px] text-bold"
+            onClick={openModal}
+          >
+            Disclaimer
+          </button>
+        </div>
+        <DisclaimerModal isOpen={isModalOpen} onClose={closeModal} />
+        <div className="flex gap-4 mt-2">
+          <a
+            href="https://www.instagram.com/iiitdm.technical/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Instagram" src="/instagram.svg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/technical-affairs-iiitdm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="LinkedIn" src="/linkedin.svg" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCV0JKK0XVBhzvtuofQB5_5g"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Yt" src="/youtube.svg" />
+          </a>
+          <a
+            href="mailto:technical.affairs@iiitdm.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Mail" src="/mail.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+
     </div>
   );
 };
