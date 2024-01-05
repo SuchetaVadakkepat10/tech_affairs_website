@@ -76,7 +76,7 @@ const Home = () => {
         </div>
         <h1 className='text-normal text-white'>Triumphs and Milestones: Celebrating Our Achievements</h1>
       </div>
-
+      
       <div className="flex flex-col sm:flex-row items-center justify-between mt-8 sm:mx-4 sm:mb-12">
         <div className="sm:w-1/4 sm:justify-center sm:mb-8">
         <div className="w-[100px] flex flex-col items-start justify-start text-left text-xl select-bar text-white mb-18 sm:w-[200px]">
@@ -159,8 +159,6 @@ const Home = () => {
   
   
   </div>
-
-  
 </div>
 {/* Clubs section */}
 
