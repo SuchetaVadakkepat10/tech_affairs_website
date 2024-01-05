@@ -4,10 +4,19 @@ import { useState } from "react";
 import MemberCard from "../(components)/MemberCard";
 
 const Home1 = () => {
-  const arr = [1, 2, 3, 4, 5, 6, 7];
+
+  const web_team = [{name:"Gokul",img:"#"},{name:"Sucheta",img:"Sucheta.jfif"},{name:"M Ashwinth Anbu",img:"/M_Ashwinth_Anbu.jpg"},{name:"Harshith B",img:"/Harshith_B.jpg"}];
+  const frost_team= [{name:"Sibi",img:"/Sibi.jpg"},{name:"Anmol",img:"#"},{name:"Sugreev S",img:"#"},{name:"Prahaladh A R",img:"/Prahalad.jpg"},{name:"Rohan G",img:"#"}];
+  const event_team = [{name:"Karthikeyan S",img:"/Karthikeyan_S.jpg"},{name:"Anish V Thomas",img:"/Anish_V_Thomas.jpg"},{name:"Vikas",img:"/Vikas.png"},{name:"Akshaj",img:"#"},{name:"Lekha",img:"/Lekha.jpg"}];
+  const video_team = [{name:"Mrudula",img:"/Mrudula.jpg"},{name:"C Vineeth Babu",img:"#"}];
+  const design_team = [{name:"Sakthiprian",img:"#"},{name:"Snekan S",img:"/Snekan_S.jpg"},{name:"Akshita Jha",img:"/Akshita_Jha.jpg"},{name:"Thakur Sai Madan",img:"#"},{name:"Harsha",img:"#"}];
+  const operations_team = [{name:"G Praneeth Kumar",img:"/image-40@2x.png"},{name:"S Sundar Subramanian",img:"#"},{name:"S Ezhil",img:"/S_Ezhil.jpg"},{name:"Hariram Selva V R",img:"#"}];
+
+  const arr = [1,2,3,4,5,6,7,8,9,10];
 
   const [image, setImage] = useState("/unsplashmxvkwpijals1@2x.png");
 
+  const Web_dev_team= []
   return (
     <div className="relative bg-white lg:w-full sm:w-full h-[2721px] overflow-x-hidden text-center text-base text-white font-image-text">
       <div className="absolute top-[0px] left-[-26px] lg:w-[101vw] lg:h-[401px] overflow-hidden text-29xl first">
@@ -29,12 +38,16 @@ const Home1 = () => {
       <div className="absolute top-[521px] left-[50px] flex lg:flex-row items-center justify-start gap-[166px] text-left lg:text-17xl md:text-4xl text-black font-inter lg:w-[600px] md:w-[325px] about-us">
         <div className="flex flex-col items-start justify-start gap-[26px] lg:w-[700px] sm:w-[320px]">
           <div className="relative font-semibold inline-block sm:w-full md:w-[662px] about-title">
-            About Us
+            Mission 
           </div>
           <div class="capitalize inline-block md:w-full lg:w-[600px] lg:text-9xl sm:text-2xl md:text-2xl">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s
+          Our mission is to create a healthy community where people interact, explore, and increase their knowledge with added fun.
+          </div>
+          <div className="relative font-semibold inline-block sm:w-full md:w-[662px] about-title">
+            MOTO
+          </div>
+          <div class="capitalize inline-block md:w-full lg:w-[600px] lg:text-9xl sm:text-2xl md:text-2xl">
+          He who has a why can endure any how.
           </div>
         </div>
         <div className="relative flex flex-row w-[510px] h-[183px] text-xs text-white font-image-text about-image">
@@ -135,10 +148,14 @@ const Home1 = () => {
               Our lovely team
             </b>
           </div>
+
+
           <div className="flex flex-col items-center justify-start gap-[50px] text-left text-9xl font-inter">
+
+            
             <div className="flex flex-col items-center justify-start gap-[30px]">
               <div className="relative capitalize fhtl">
-                Faculty Heads & Team lead
+                Faculty Heads
               </div>
               <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text divalign">
                 <div className="flex flex-row gap-[26px]">
@@ -146,10 +163,10 @@ const Home1 = () => {
                     <div className="absolute top-[0px] left-[0px] w-[138px] h-[103px]">
                       <div className="absolute top-[0px] left-[0px] [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
                       <b className="absolute top-[64px] left-[calc(50%_-_42px)]">
-                        Dr. Siva Selvan
+                      Dr. Sivaselvan B
                       </b>
                       <div className="absolute top-[80px] left-[calc(50%_-_21px)] text-3xs">
-                        Dean-SA
+                      Dean - Student Affairs
                       </div>
                     </div>
                     <img
@@ -161,10 +178,24 @@ const Home1 = () => {
                   <div className="relative rounded-8xs w-[138px] h-[103px]">
                     <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
                     <b className="absolute top-[64px] left-[calc(50%_-_47px)]">
+                    Dr. Siva Prasad
+                    </b>
+                    <div className="absolute top-[80px] left-[calc(50%_-_35px)] text-3xs">
+                    A V S - PIC- Co-curricular Affairs
+                    </div>
+                    <img
+                      className="absolute top-[10px] left-[45px] rounded-[300px] w-12 h-12 object-cover"
+                      alt=""
+                      src="#"
+                    />
+                  </div>
+                  <div className="relative rounded-8xs w-[138px] h-[103px]">
+                    <div className="absolute top-[0px] left-[0px] rounded-8xs [background:linear-gradient(90deg,_#acddf9,_#879cfd)] w-[138px] h-[103px]" />
+                    <b className="absolute top-[64px] left-[calc(50%_-_47px)]">
                       Dr. Parvathy Das
                     </b>
                     <div className="absolute top-[80px] left-[calc(50%_-_35px)] text-3xs">
-                      Faculty Advisor
+                    PIC - Co-curricular Affairs
                     </div>
                     <img
                       className="absolute top-[10px] left-[45px] rounded-[300px] w-12 h-12 object-cover"
@@ -173,6 +204,14 @@ const Home1 = () => {
                     />
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">
+              SAC - Technical Affairs
+              </div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text divalign">
                 <div className="flex flex-row gap-[26px]">
                   <div className="flex flex-col items-center justify-start">
                     <div className="relative w-[138px] h-[103px]">
@@ -227,31 +266,79 @@ const Home1 = () => {
                 </div>
               </div>
             </div>
+
+            
             <div className="flex flex-col items-center justify-start gap-[30px]">
-              <div className="relative capitalize fhtl">Team members</div>
+              <div className="relative capitalize fhtl">Web Development Team</div>
               <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
-                {arr.map((member, index) => (
-                  <MemberCard key={index} name="G Praneeth Kumar" />
+                {web_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
                 ))}
               </div>
             </div>
 
             <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">Frost Team</div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+                {frost_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">Operations Team</div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+                {operations_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">Events Team</div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+                {event_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">Design Team</div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+                {design_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
+              <div className="relative capitalize fhtl">Public Outreach Team</div>
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+                {video_team.map((member, index) => (
+                  <MemberCard key={index} member_name={member.name} member_img= {member.img} />
+                ))}
+              </div>
+            </div>
+
+
+
+            <div className="flex flex-col items-center justify-start gap-[30px]">
               <div className="relative capitalize fhtln">
                 <span>Designed and developed with</span>
                 <span className="text-red">❤</span>
-                <span>️ by</span>
-              </div>
-              <div className="flex flex-row items-start justify-start gap-[20px] text-xs font-image-text animate-scrolling">
-                {arr.map((member, index) => (
-                  <MemberCard key={index} name="G Praneeth Kumar" />
-                ))}
+                <span>️ by : </span>
+                <span>️ Website Design and Development Team </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[0px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/footer@3x.png')] bg-cover bg-no-repeat bg-[top] foot">
+
+
+
+      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/footer@3x.png')] bg-cover bg-no-repeat bg-[top] foot">
         <div className="flex flex-col items-start justify-start gap-[126px]">
           <div className="flex flex-row items-start justify-start gap-[579px] sample">
             <div className="flex flex-col items-start justify-start gap-[13px] textdiv">
