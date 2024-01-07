@@ -19,12 +19,12 @@ const Home1 = () => {
   };
 
 
-  const web_team = [{name:"Gokul",img:"#"},{name:"Sucheta",img:"Sucheta.jfif"},{name:"M Ashwinth Anbu",img:"/M_Ashwinth_Anbu.jpg"},{name:"Harshith B",img:"/Harshith_B.jpg"}];
-  const frost_team= [{name:"Sibi",img:"/Sibi.jpg"},{name:"Anmol",img:"#"},{name:"Sugreev S",img:"#"},{name:"Prahaladh A R",img:"/Prahalad.jpg"},{name:"Rohan G",img:"#"}];
-  const event_team = [{name:"Karthikeyan S",img:"/Karthikeyan_S.jpg"},{name:"Anish V Thomas",img:"/Anish_V_Thomas.jpg"},{name:"Vikas",img:"/Vikas.png"},{name:"Akshaj",img:"#"},{name:"Lekha",img:"/Lekha.jpg"}];
-  const video_team = [{name:"Mrudula",img:"/Mrudula.jpg"},{name:"C Vineeth Babu",img:"#"}];
-  const design_team = [{name:"Sakthiprian",img:"#"},{name:"Snekan S",img:"/Snekan_S.jpg"},{name:"Akshita Jha",img:"/Akshita_Jha.jpg"},{name:"Thakur Sai Madan",img:"#"},{name:"Harsha",img:"#"}];
-  const operations_team = [{name:"G Praneeth Kumar",img:"/image-40@2x.png"},{name:"S Sundar Subramanian",img:"#"},{name:"S Ezhil",img:"/S_Ezhil.jpg"},{name:"Hariram Selva V R",img:"#"}];
+  const web_team = [{name:"Gokul",img:"gokul.jpeg"},{name:"Sucheta",img:"Sucheta.jfif"},{name:"M Ashwinth Anbu",img:"/M_Ashwinth_Anbu.jpg"},{name:"Harshith B",img:"/Harshith_B.jpg"}];
+  const frost_team= [{name:"Sibi",img:"/Sibi.jpg"},{name:"Anmol",img:"anmol.jpeg"},{name:"Sugreev S",img:"Sugreev.jpeg"},{name:"Prahaladh A R",img:"/Prahalad.jpg"},{name:"Rohan G",img:"rohan.jpeg"}];
+  const event_team = [{name:"Karthikeyan S",img:"/karthikeyan.jpg"},{name:"Anish V Thomas",img:"/Anish_V_Thomas.jpg"},{name:"Vikas",img:"/Vikas.png"},{name:"Akshaj",img:"akshaj.jpeg"},{name:"Lekha",img:"/Lekha.jpg"}];
+  const video_team = [{name:"Mrudula",img:"/Mrudula.jpg"},{name:"C Vineeth Babu",img:"vineeth.jpg"}];
+  const design_team = [{name:"Sakthiprian",img:"sakthiprian.jpg"},{name:"Snekan S",img:"/Snekan_S.jpg"},{name:"Akshita Jha",img:"/Akshita_Jha.jpg"},{name:"Thakur Sai Madan",img:"saimadhan.jpg"},{name:"Harsha",img:"harsha.jpg"}];
+  const operations_team = [{name:"G Praneeth Kumar",img:"/image-40@2x.png"},{name:"S Sundar Subramanian",img:"sundar.jpg"},{name:"S Ezhil",img:"/S_Ezhil.jpg"},{name:"Hariram Selva V R",img:"hariram.jpg"}];
 
   const arr = [1,2,3,4,5,6,7,8,9,10];
 
@@ -58,7 +58,7 @@ const Home1 = () => {
           Our mission is to create a healthy community where people interact, explore, and increase their knowledge with added fun.
           </div>
           <div className="relative font-semibold inline-block sm:w-full md:w-[662px] about-title">
-            MOTO
+            Motto
           </div>
           <div class="capitalize inline-block md:w-full lg:w-[600px] lg:text-9xl sm:text-2xl md:text-2xl">
           He who has a why can endure any how.
@@ -100,7 +100,7 @@ const Home1 = () => {
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[551px] h-[50px]" />
                 <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                  Our first Vashisht in 2019
+                  Our first Vashisht in 2018
                 </div>
               </div>
               <div
@@ -109,7 +109,7 @@ const Home1 = () => {
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
                 <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                  Our first Vashisht in 2019
+                  Our second Vashisht in 2019
                 </div>
               </div>
               <div
@@ -118,7 +118,7 @@ const Home1 = () => {
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
                 <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                  Our first Vashisht in 2019
+                  Our third Vashisht in 2022
                 </div>
               </div>
               <div
@@ -127,7 +127,7 @@ const Home1 = () => {
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
                 <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                  Our first Vashisht in 2019
+                  Our fourth Vashisht in 2023
                 </div>
               </div>
             </div>
@@ -141,13 +141,13 @@ const Home1 = () => {
               />
               <div className="absolute top-[0px] left-[0px] [background:linear-gradient(179.91deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.2))] w-[567px] h-[136px]" />
             </div>
-            <div className="relative font-medium inline-block w-[567px] eve">
+            {/* <div className="relative font-medium inline-block w-[567px] eve">
               Event
             </div>
             <div className="relative text-xl capitalize inline-block w-[568px] eve">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ const Home1 = () => {
                     <img
                       className="absolute top-[10px] left-[45px] rounded-[300px] w-12 h-12 object-cover"
                       alt=""
-                      src="#"
+                      src="avs.jpeg"
                     />
                   </div>
                   <div className="relative rounded-8xs w-[138px] h-[110px]">
@@ -329,7 +329,7 @@ const Home1 = () => {
 
             <div className="flex flex-col items-center justify-start gap-[30px]">
               <div className="relative capitalize fhtl">Public Outreach Team</div>
-              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text animate-scrolling">
+              <div className="flex flex-row items-start justify-start gap-[26px] text-xs font-image-text md:animate-scrolling">
                 {video_team.map((member, index) => (
                   <MemberCard key={index} member_name={member.name} member_img= {member.img} />
                 ))}
@@ -338,20 +338,20 @@ const Home1 = () => {
 
 
 
-            <div className="flex flex-col items-center justify-start gap-[30px]">
+            {/* <div className="flex flex-col items-center justify-start gap-[30px]">
               <div className="relative capitalize fhtln">
                 <span>Designed and developed with</span>
                 <span className="text-red">❤</span>
                 <span>️ by : </span>
                 <span>️ Website Design and Development Team </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
 
-      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center">
+      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center foot">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:gap-10">
         <div className="flex flex-col items-center md:items-start gap-6 md:w-2/6">
           <div className="font-semibold text-whitesmoke">

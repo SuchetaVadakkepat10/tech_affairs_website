@@ -20,12 +20,14 @@ body {
     transform: translateX(-100%);
   }
 }
-.animate-scrolling {
-  animation: scroll 40s linear infinite;
-}
+
 
 @media (max-width:426px)
 {
+
+  .animate-scrolling {
+    animation: scroll 40s linear infinite;
+  }
   .sample
   {
     display:flex;
@@ -182,7 +184,7 @@ body {
   .foot
   {
     position:relative;
-    top:495vh;
+    top:695vh;
     overflow:visible;
   }
 

@@ -14,7 +14,7 @@ function MemberCard({member_name,member_img,title}) {
                 </div>
             </div>
             <img
-                className="absolute top-[10px] left-[45px] rounded-81xl w-12 h-12 object-cover"
+                className="absolute top-[10px] left-[45px] rounded-[300px] w-12 h-12 object-cover"
                 alt=""
                 src={member_img}
             />
