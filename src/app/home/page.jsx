@@ -4,9 +4,21 @@ import { useState } from "react";
 import Image from 'next/image';
 import Card from 'react-bootstrap/Card';
 
-import Footer from '../(components)/Footer';
+import Footer from './(components)/Footer';
 
 const Home = () => {
+
+  const event_details = 
+  [{title: "AUV Society",subtitle: "Hackathon 2.0", description: "AUV Society's Team Nira has successfully qualified for the renowned MATE-ROV World Championship Internationals. Notably, Team Nira is the sole representative from India at this esteemed event, making their accomplishment all the more remarkable. Their success serves as a shining example of the exceptional caliber of students nurtured and guided by our institute.",img: "/auv_event.png"},
+  {title:"MaRS club", subtitle: "Achivements of MaRS club", description: "Mars Rover Students (MaRS) Club have secured 3rd Rank in Asia (6th Rank Globally) in the Finals of European Rover Challenge (ERC) Remote-Edition & 3rd Rank in India (21st Rank Globally) in the Finals of European Rover Challenge (ERC) Onsite-Edition. In addition to this, the club has qualified for the finals of International Rover Challenge 2024. Along with this our team has recently secured 5th Rank globally in the Critical Design Review round of Australian Rover Challenge 2024.",img: "/mars_event.png"},
+  {title: "Robotics", subtitle: "Achivements of Robotics club", description: "Robotics Club has qualified for the final round of Flipkart Grid Challenge and have a collaboration with NGO Veyyil Robotics to deliver essential robotics services", img: "/"},
+  {title: "SAE", subtitle: "Achivements of SAE: Team Rebel Racers", description: "Team Rebel Racers in the Phase two (Static and Virtual Dynamic Events) of the SAE mBaja 2024 competition. For the first time ever, the team has secured an outstanding AIR 3 in the CAE (Computer-Aided Engineering) event. In the highly challenging Cost Event, where financial acumen meets innovation, Rebel Racers have claimed an impressive AIR 11. Achieving an AIR 14 in the Go Green event, our rank in the design event stands at AIR 26 and AIR 42 for the sales event respectively. In the virtual Dynamic round of the competition where our vehicle was simulated and tested in the exact conditions as present in the real time track, we secured an overall rank of AIR 11 in the country. We achieved an AIR 9 in the maneuverability round and AIR 12 in the All Terrain Performance round.", img: "/sae_event.png"},
+  {title: "SAE AeroTHON", subtitle: "Achivements of SAE AeroTHON: Team Fujin", description: "Team Fujin has won the Best Challenger Award in the Phase II of the competition, SAE AeroTHON 2023. The event, hosted by SAEINDIA, tested the team's ability to design, build and fly an Unmanned Aerial System.", img: "/aerothon_event.png"},
+  {title: "TAD Aerodesign Club", subtitle: "Achivements of TAD Aerodesign Club", description: "The team has qualified to the finals of IIT Boeing Aeromodelling Competition held at Shaastra, IIT Madras from January 3 -7, 2024.", img: "/"},
+  {title: "Individual Achievements", subtitle: "Smart India Hackathon 2023", description: "Team Uncoders (Abhishek M J - CS21B2018, Chanakya Vasantha - CS21B2008, M Sri Sujan - CS21B1081, DSLR Siddesh - CS21B2019, Srilekha - EC22B1127 and Vundi HS Mokshagna - CS21B1062) from IIITDM Kancheepuram clinches victory at Smart India Hackathon 2023, on the problem statement, Developing a GUI based hardening script for Ubuntu operating system with flexibility to cater for organisational security policies (PS - 1446) at finals held at Amity University, Uttar Pradesh.", img: "/sih_event.png"}
+]
+  const [event_option,Set_event_Option] = useState(0);
+
   const [image,setImage] = useState('/unsplashmxvkwpijals1@2x.png');
   return (
     <div className="relative bg-white w-full overflow-hidden text-left text-base text-black font-inter">
@@ -81,44 +93,44 @@ const Home = () => {
         <div className="w-[100px] flex flex-col items-start justify-start text-left text-xl select-bar text-white mb-18 sm:w-[200px]">
                   <div className="relative w-[200px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                      Hackathon 2.0
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(0)}>
+                    AUV Society
                     </div>
                   </div>
                   <div className="relative w-[200px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                      Event 2
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(1)}>
+                    MaRS club
                     </div>
                   </div>
                   <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                    Event 3
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(2)}>
+                    Robotics
                     </div>
                   </div>
                   <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                    Event 4
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(3)}>
+                    SAE
                     </div>
                   </div>
                   <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                    Event 5
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(4)}>
+                    SAE AeroTHON
                     </div>
                   </div>
                   <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                    Event 6
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(5)}>
+                    TAD Aerodesign Club
                     </div>
                   </div>
                   <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black mb-12" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
-                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
-                    Event 7
+                    <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv"onClick={() => Set_event_Option(6)}>
+                    Individual Achievements
                     </div>
                   </div>
               </div>
@@ -134,18 +146,18 @@ const Home = () => {
   <div className="flex flex-col items-center sm:flex-row sm:items-start justify-center text-center sm:text-center text-white">
     <div className="flex flex-col sm:flex-row items-center text-center sm:text-center">
       <div className="sm:w-full sm:mt-0">
-        <h1 className='text-normal text-center sm:text-center lg:text-left'>Hack Code 2.0</h1>
-        <h2 className='lg:ml-0 text-center sm:text-center lg:text-left '>We are Technical Affairs IIITDM</h2>
+        <h1 className='text-normal text-center sm:text-center lg:text-left'>{event_details[event_option].title}</h1>
+        <h2 className='lg:ml-0 text-center sm:text-center lg:text-left '>{event_details[event_option].subtitle}</h2>
         
         <div className='overflow-clip'>
           <p className='font-normal sm:text-sm  lg:text-left lg:ml-0 sm:text-center'>
-            HackCode 2.0 serves as a platform to encourage enthusiastic minds to brainstorm on solutions for challenging issues from all over India. The unified motive of gathering all like-minded hackers to the institution is what led to the creation of the idea, the first of its kind. Well provide a platform for innovations, where developers can test and showcase their potential to the best of their abilities.
+            {event_details[event_option].description}
           </p>
         </div>
       </div>
       <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-12">
       <Image
-                    src="/"
+                    src={event_details[event_option].img}
                     alt="Vector"
                     width={300}
                     height={300}
@@ -182,7 +194,7 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-12">
       {/* First image */}
       <Image
-            src="/spinny.gif"
+            src={event_details[event_option].img}
             alt="Vector"
             width={450}
             height={450}
@@ -246,8 +258,8 @@ const Home = () => {
         <Image
             src="/tkw_logo.png"
             alt="Vector"
-            width={80}
-            height={80}
+            width={50}
+            height={50}
           />
         </div>
     </div>
@@ -267,7 +279,7 @@ const Home = () => {
       <Image
             src="/gcpa_logo.png"
             alt="Vector"
-            width={70}
+            width={50}
             height={50}
           />
         </div>
