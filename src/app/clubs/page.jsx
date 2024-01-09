@@ -345,7 +345,7 @@ const CardPage = () => {
           />
           <div className="absolute w-[calc(100%_+_3px)] top-[0px] right-[0px] left-[0px] [background:linear-gradient(180.03deg,_rgba(0,_0,_0,_0.5),_rgba(0,_0,_0,_0)_51.48%,_#000)] h-[401px]" />
           <b className="absolute top-[308px] left-[calc(50%_-_279px)] weare text-white">
-            We are Technical affairs
+            Technical Clubs of IIITDM
           </b>
         </div>
 

@@ -194,7 +194,7 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-12">
       {/* First image */}
       <Image
-            src={event_details[event_option].img}
+            src="/spinny.gif"
             alt="Vector"
             width={450}
             height={450}
