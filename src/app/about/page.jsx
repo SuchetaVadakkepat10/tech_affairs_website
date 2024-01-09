@@ -403,7 +403,7 @@ const Home1 = () => {
 
 
 
-      <div className="absolute absolute top-[3500px] w-full bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center">
+      <div className="absolute top-[3500px] w-full bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:gap-10">
         <div className="flex flex-col items-center md:items-start gap-6 md:w-2/6">
           <div className="font-semibold text-whitesmoke">
