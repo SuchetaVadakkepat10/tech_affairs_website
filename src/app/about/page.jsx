@@ -4,6 +4,7 @@ import MemberCard from "../(components)/MemberCard";
 import React, { useState } from "react";
 import Image from "next/image";
 import DisclaimerModal from "../(components)/DisclaimerModal";
+import Footer from "../(components)/Footer";
 
 const Home1 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,7 +61,7 @@ const Home1 = () => {
 
   const Web_dev_team = [];
   return (
-    <div className="relative bg-white lg:w-full sm:w-full h-[2721px] overflow-x-hidden text-center text-base text-white font-image-text">
+    <div className="relative bg-white lg:w-full sm:w-full h-[3928px] overflow-x-hidden text-center text-base text-white font-image-text">
       <div className="absolute top-[0px] left-[-26px] lg:w-[101vw] lg:h-[401px] overflow-hidden text-29xl first">
         <div className="absolute top-[712px] left-[687px] flex flex-row items-start justify-start gap-[16px] opacity-[0]">
           <div className="relative rounded-[50%] bg-black w-[15px] h-[15px]" />
@@ -290,7 +291,7 @@ const Home1 = () => {
                       <img
                         className="absolute top-[10px] left-[calc(50%_-_24px)] rounded-81xl w-12 h-12 object-cover"
                         alt=""
-                        src="/image-40@2x.png"
+                        src="sundar.jpg"
                       />
                     </div>
                     <div className="rounded-[34.21px] [background:linear-gradient(90deg,_#acddf9,_#879cfd)] overflow-hidden flex flex-row items-start justify-start p-[6.842105388641357px] mt-[-7px]">
@@ -397,204 +398,205 @@ const Home1 = () => {
             </div> */}
           </div>
         </div>
-      </div>
+      </div> 
 
-      <div className="absolute bottom-[-1500px] w-[100vw] flex flex-col items-start justify-start p-[50px] box-border bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center foot">
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:gap-10">
-          <div className="flex flex-col items-center md:items-start gap-6 md:w-2/6">
-            <div className="font-semibold text-whitesmoke">
-              <Image
-                src="/nav_logo.png"
-                alt="Tech Affairs Logo"
-                width={80}
-                height={80}
-              />
-            </div>
-            <div className="text-center md:text-left text-whitesmoke">
-              <p className="m-0 ml-0">
-                Elevating Technology At IIITDM Kancheepuram
-              </p>
-            </div>
+
+
+
+      <div className="absolute absolute top-[3500px] w-[1519px] bg-[url('/frame.png')] bg-cover bg-no-repeat bg-[top] text-center">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:gap-10">
+        <div className="flex flex-col items-center md:items-start gap-6 md:w-2/6">
+          <div className="font-semibold text-whitesmoke">
+            <Image
+              src="/nav_logo.png"
+              alt="Tech Affairs Logo"
+              width={80}
+              height={80}
+            />
           </div>
-          <div className="flex flex-col items-start gap-6 text-whitesmoke md:w-4/6 md:gap-10">
-            {/* PC Version - Two Columns */}
-            <div className="hidden md:flex md:flex-row md:gap-10">
-              <div className="flex flex-col items-start gap-6 text-whitesmoke">
-                <div className="font-semibold">
-                  Innovation Grant and Support
-                </div>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Advance_Request_Form.pdf"
-                  download="Advance_Request_Form.pdf"
-                >
-                  Advance Request Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Budget_Request_Form.pdf"
-                  download="Budget_Request_Form.pdf"
-                >
-                  Budget Request Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Reimbursement_Form.pdf"
-                  download="Reimbursement_Form.pdf"
-                >
-                  Reimbursement Form
-                </a>
-              </div>
-
-              <div className="flex flex-col items-start gap-6 text-whitesmoke">
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
-                  download="SA_Tech_Advance_Settlement_Form.pdf"
-                >
-                  Advance Settlement Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
-                  download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
-                >
-                  Asset Transform Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_Non_Consumable_Indent.pdf"
-                  download="SA_Tech_Non_Consumable_Indent.pdf"
-                >
-                  Non Consumable Indent Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
-                  download="SA_Tech_Temporary_Advance_Form.pdf"
-                >
-                  Temporary Advance Form
-                </a>
-              </div>
-            </div>
-
-            {/* Mobile Version - Single Column */}
-            <div className="md:hidden">
-              <div className="flex flex-col items-start gap-6 text-whitesmoke">
-                <div className="font-semibold">
-                  Innovation Grant and Support
-                </div>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Advance_Request_Form.pdf"
-                  download="Advance_Request_Form.pdf"
-                >
-                  Advance Request Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Budget_Request_Form.pdf"
-                  download="Budget_Request_Form.pdf"
-                >
-                  Budget Request Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/Reimbursement_Form.pdf"
-                  download="Reimbursement_Form.pdf"
-                >
-                  Reimbursement Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
-                  download="SA_Tech_Advance_Settlement_Form.pdf"
-                >
-                  Advance Settlement Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
-                  download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
-                >
-                  Asset Transform Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
-                  download="SA_Tech_Non_Consumable_Indent.pdf"
-                >
-                  Non Consumable Indent Form
-                </a>
-                <a
-                  className="cursor-pointer"
-                  href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
-                  download="SA_Tech_Temporary_Advance_Form.pdf"
-                >
-                  Temporary Advance Form
-                </a>
-              </div>
+          <div className="text-center md:text-left text-whitesmoke">
+            <p className="m-0 ml-0">
+              Elevating Technology At IIITDM Kancheepuram
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-start gap-6 text-whitesmoke md:w-4/6 md:gap-10">
+          {/* PC Version - Two Columns */}
+          <div className="hidden md:flex md:flex-row md:gap-10">
+            <div className="flex flex-col items-start gap-6 text-whitesmoke">
+              <div className="font-semibold">Innovation Grant and Support</div>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Advance_Request_Form.pdf"
+                download="Advance_Request_Form.pdf"
+              >
+                Advance Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Budget_Request_Form.pdf"
+                download="Budget_Request_Form.pdf"
+              >
+                Budget Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Reimbursement_Form.pdf"
+                download="Reimbursement_Form.pdf"
+              >
+                Reimbursement Form
+              </a>
             </div>
 
             <div className="flex flex-col items-start gap-6 text-whitesmoke">
-              <div className="font-semibold">I2R MakerSpace</div>
               <a
                 className="cursor-pointer"
-                href="https://docs.google.com/document/d/1r8gTKgbhtiYPMCVVTHUTe97uFcEpFMG-e1pJwtALNEI/edit#heading=h.4hwppuotdne3"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
+                download="SA_Tech_Advance_Settlement_Form.pdf"
               >
-                Access Form
+                Advance Settlement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
+                download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+              >
+                Asset Transform Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Non_Consumable_Indent.pdf"
+                download="SA_Tech_Non_Consumable_Indent.pdf"
+              >
+                Non Consumable Indent Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
+                download="SA_Tech_Temporary_Advance_Form.pdf"
+              >
+                Temporary Advance Form
               </a>
             </div>
           </div>
-        </div>
-        <hr className="border-t border-white w-full" />
-        <div className="text-center py-4 flex flex-col items-center justify-center lg:flex-row justify-between">
-          <p className="text-xs sm:text-sm lg:text-base text-whitesmoke">
-            © Technical Affairs IIITDM. All rights reserved.
-          </p>
-          <div className="flex gap-4 mt-2">
-            <button
-              className="cursor-pointer bg-transparent text-white text-[15px] text-bold"
-              onClick={openModal}
-            >
-              Disclaimer
-            </button>
+
+          {/* Mobile Version - Single Column */}
+          <div className="md:hidden">
+            <div className="flex flex-col items-start gap-6 text-whitesmoke">
+              <div className="font-semibold">Innovation Grant and Support</div>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Advance_Request_Form.pdf"
+                download="Advance_Request_Form.pdf"
+              >
+                Advance Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Budget_Request_Form.pdf"
+                download="Budget_Request_Form.pdf"
+              >
+                Budget Request Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/Reimbursement_Form.pdf"
+                download="Reimbursement_Form.pdf"
+              >
+                Reimbursement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Advance_Settlement_Form.pdf"
+                download="SA_Tech_Advance_Settlement_Form.pdf"
+              >
+                Advance Settlement Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+                download="SA_Tech_03_ASSEST_TRANSFER_FORM.pdf"
+              >
+                Asset Transform Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_03_ASSET_TRANSFER_FORM.pdf"
+                download="SA_Tech_Non_Consumable_Indent.pdf"
+              >
+                Non Consumable Indent Form
+              </a>
+              <a
+                className="cursor-pointer"
+                href="/pdfs/SA_Tech_Temporary_Advance_Form.pdf"
+                download="SA_Tech_Temporary_Advance_Form.pdf"
+              >
+                Temporary Advance Form
+              </a>
+            </div>
           </div>
-          <DisclaimerModal isOpen={isModalOpen} onClose={closeModal} />
-          <div className="flex gap-4 mt-2">
+
+          <div className="flex flex-col items-start gap-6 text-whitesmoke">
+            <div className="font-semibold">I2R MakerSpace</div>
             <a
-              href="https://www.instagram.com/iiitdm.technical/"
+              className="cursor-pointer"
+              href="https://docs.google.com/document/d/1r8gTKgbhtiYPMCVVTHUTe97uFcEpFMG-e1pJwtALNEI/edit#heading=h.4hwppuotdne3"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="w-6 h-6" alt="Instagram" src="/instagram.svg" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/technical-affairs-iiitdm/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="w-6 h-6" alt="LinkedIn" src="/linkedin.svg" />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCV0JKK0XVBhzvtuofQB5_5g"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="w-6 h-6" alt="Yt" src="/youtube.svg" />
-            </a>
-            <a
-              href="mailto:technical.affairs@iiitdm.ac.in"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="w-6 h-6" alt="Mail" src="/mail.svg" />
+              Access Form
             </a>
           </div>
         </div>
       </div>
+      <hr className="border-t border-white w-full" />
+      <div className="text-center py-4 flex flex-col items-center justify-center lg:flex-row justify-between">
+        <p className="text-xs sm:text-sm lg:text-base text-whitesmoke">
+          © Technical Affairs IIITDM. All rights reserved.
+        </p>
+        <div className="flex gap-4 mt-2">
+          <button
+            className="cursor-pointer bg-transparent text-white text-[15px] text-bold"
+            onClick={openModal}
+          >
+            Disclaimer
+          </button>
+        </div>
+        <DisclaimerModal isOpen={isModalOpen} onClose={closeModal} />
+        <div className="flex gap-4 mt-2">
+          <a
+            href="https://www.instagram.com/iiitdm.technical/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Instagram" src="/instagram.svg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/technical-affairs-iiitdm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="LinkedIn" src="/linkedin.svg" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCV0JKK0XVBhzvtuofQB5_5g"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Yt" src="/youtube.svg" />
+          </a>
+          <a
+            href="mailto:technical.affairs@iiitdm.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-6 h-6" alt="Mail" src="/mail.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+
     </div>
   );
 };
