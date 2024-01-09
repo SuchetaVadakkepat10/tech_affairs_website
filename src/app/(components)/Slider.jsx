@@ -3,7 +3,6 @@ import { useSpring, animated } from "react-spring";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"; // Import arrow icons
 
 const sliderImages = [
-  "/friction_individual achievement.jpg",
   "/lamplighting.jpeg",
   "/Entrance.jpeg",
   "/Vashisht23_Panel Discussion.jpeg",
