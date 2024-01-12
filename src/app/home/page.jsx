@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from "react";
 import Image from 'next/image';
 import Card from 'react-bootstrap/Card';
-
+import HomeSlider from '../(components)/Homeslider';
 import Footer from '../(components)/Footer';
 
 const Home = () => {
@@ -20,21 +20,16 @@ const Home = () => {
   const [event_option,Set_event_Option] = useState(0);
 
   const [image,setImage] = useState('/unsplashmxvkwpijals1@2x.png');
+  
   return (
     <div className="relative bg-white w-full overflow-hidden text-left text-base text-black font-inter">
 
       {/* Vector and text section */}
-      <div className="relative w-full h-[322px] bg-gainsboro-100 flex items-center justify-center text-center p-12">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image
-            src="/vector.svg"
-            alt="Vector"
-            width={50}
-            height={50}
-          />
-          <div className="font-semibold text-black">Lorem Ipsum</div>
-        </div>
+      <div className="relative w-full h-[500px] bg-black flex items-center justify-center text-center p-0">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <HomeSlider />
       </div>
+    </div>
 
      {/* Cards section */}
      <div className="flex flex-wrap justify-center">
