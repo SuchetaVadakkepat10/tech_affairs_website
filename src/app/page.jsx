@@ -70,10 +70,10 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-12">
       {/* First image */}
       <Image
-            src="/"
+            src="/AboutTech.JPG"
             alt="Vector"
-            width={50}
-            height={50}
+            width={300}
+            height={300}
           />
     </div> 
   </div>
@@ -91,43 +91,43 @@ const Home = () => {
       <div className="flex flex-col sm:flex-row items-center justify-between mt-8 sm:mx-4 sm:mb-12">
         <div className="sm:w-1/4 sm:justify-center sm:mb-8">
         <div className="w-[100px] flex flex-col items-start justify-start text-left text-xl select-bar text-white mb-18 sm:w-[200px]">
-                  <div className="relative w-[200px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(0)}>
                     AUV Society
                     </div>
                   </div>
-                  <div className="relative w-[200px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] h-[50px] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(1)}>
                     MaRS club
                     </div>
                   </div>
-                  <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(2)}>
                     Robotics
                     </div>
                   </div>
-                  <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black"  onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(3)}>
                     SAE
                     </div>
                   </div>
-                  <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(4)}>
                     SAE AeroTHON
                     </div>
                   </div>
-                  <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Set_event_Option(5)}>
                     TAD Aerodesign Club
                     </div>
                   </div>
-                  <div className="relative w-[200px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black mb-12" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
+                  <div className="relative w-[300px] h-[50px] cursor-pointer hover:[background:linear-gradient(90deg,_#acddf9,_#879cfd)] hover:text-black mb-12" onClick={() => (setImage('/unsplashmxvkwpijals1@2x.png'))}>
                     <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[120px] h-[50px]" />
                     <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv"onClick={() => Set_event_Option(6)}>
                     Individual Achievements
@@ -227,10 +227,10 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-8 pb-12">
       {/* First image */}
       <Image
-            src="/"
+            src="/AboutVashisht.JPG"
             alt="Vector"
-            width={50}
-            height={50}
+            width={300}
+            height={300}
           />
     </div> 
   </div>

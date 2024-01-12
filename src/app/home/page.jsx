@@ -70,10 +70,10 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-12">
       {/* First image */}
       <Image
-            src="/"
+            src="/AboutTech.JPG"
             alt="Vector"
-            width={50}
-            height={50}
+            width={300}
+            height={300}
           />
     </div> 
   </div>
@@ -227,10 +227,10 @@ const Home = () => {
     <div className="sm:w-1/2 flex justify-center sm:justify-end mt-4 sm:mt-0 mr-4 sm:mr-8 lg:mr-8 pb-12">
       {/* First image */}
       <Image
-            src="/"
+            src="/AboutVashisht.JPG"
             alt="Vector"
-            width={50}
-            height={50}
+            width={300}
+            height={300}
           />
     </div> 
   </div>
