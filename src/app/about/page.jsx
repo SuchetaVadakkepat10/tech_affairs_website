@@ -8,6 +8,8 @@ import Footer from "../(components)/Footer";
 
 const Home1 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [va_pic,Setva_pic] = useState(0);
+
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -16,6 +18,13 @@ const Home1 = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const va  = [
+    "/2018.png",
+    "/2019.png",
+    "/2022.png",
+    "/2023.png"
+  ]
 
   const web_team = [
     { name: "Gokul", img: "gokul.jpeg" },
@@ -69,9 +78,9 @@ const Home1 = () => {
           <div className="relative rounded-[50%] bg-black w-[15px] h-[15px]" />
         </div>
         <img
-          className="absolute top-[0px] left-[26px] w-[100vw] h-[979px] object-cover first-img"
+          className="absolute top-[0px] left-[26px] w-[100vw] h-[401px] object-cover first-img"
           alt=""
-          src="/unsplashi6at9f7mwdq@2x.png"
+          src="/about_main.jpg"
         />
         <div className="absolute w-[calc(100%_+_3px)] top-[0px] right-[0px] left-[0px] [background:linear-gradient(180.03deg,_rgba(0,_0,_0,_0.5),_rgba(0,_0,_0,_0)_51.48%,_#000)] h-[401px]" />
         <b className="absolute top-[308px] left-[calc(50%_-_279px)] weare">
@@ -129,7 +138,7 @@ const Home1 = () => {
                 onClick={() => setImage("/unsplashmxvkwpijals1@2x.png")}
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs  w-[551px] h-[50px]" />
-                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
+                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv " onClick={() => Setva_pic(0)}>
                   Our first Vashisht in 2018
                 </div>
               </div>
@@ -138,7 +147,7 @@ const Home1 = () => {
                 onClick={() => setImage("/unsplashmxvkwpijals1@2x.png")}
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
-                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
+                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Setva_pic(1)}>
                   Our second Vashisht in 2019
                 </div>
               </div>
@@ -147,7 +156,7 @@ const Home1 = () => {
                 onClick={() => setImage("/unsplashmxvkwpijals1@2x.png")}
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
-                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
+                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Setva_pic(2)}>
                   Our third Vashisht in 2022
                 </div>
               </div>
@@ -156,18 +165,18 @@ const Home1 = () => {
                 onClick={() => setImage("/unsplashmxvkwpijals1@2x.png")}
               >
                 <div className="absolute top-[0px] left-[0px] rounded-8xs w-[551px] h-[50px]" />
-                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv">
+                <div className="absolute top-[12px] left-[10px] capitalize font-medium inline-block w-[373.8px] ofv" onClick={() => Setva_pic(3)}>
                   Our fourth Vashisht in 2023
                 </div>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-end justify-start gap-[18px] text-left text-9xl ji">
-            <div className="relative w-[567px] h-[136px] overflow-hidden shrink-0 journey-img">
+            <div className="relative w-[567px] h-[336px] overflow-hidden shrink-0 journey-img">
               <img
-                className="absolute top-[0px] left-[0px] w-[604px] h-[916px] object-cover"
+                className="absolute top-[0px] left-[0px] w-[567px] h-[336px] object-cover"
                 alt=""
-                src={image}
+                src={va[va_pic]}
               />
               <div className="absolute top-[0px] left-[0px] [background:linear-gradient(179.91deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.2))] w-[567px] h-[136px]" />
             </div>
