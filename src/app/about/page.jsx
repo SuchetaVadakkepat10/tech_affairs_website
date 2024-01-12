@@ -7,7 +7,7 @@ import DisclaimerModal from "../(components)/DisclaimerModal";
 import Footer from "../(components)/Footer";
 
 const Home1 = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); 
   const [va_pic,Setva_pic] = useState(0);
 
 
