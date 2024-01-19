@@ -4,12 +4,12 @@ import { useSpring, animated } from "react-spring";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const sliderImages = [
-  '/pic1.jpeg',
-  '/pic2.jpeg',
-  '/pic3.JPG',
-  '/pic4.jpg',
-  '/pic5.JPG',
-  '/pic6.HEIC'
+  "/pic1.jpeg",
+  "/pic2.jpeg",
+  "/pic3.JPG",
+  "/pic4.jpg",
+  "/pic5.JPG",
+  "/pic6.HEIC",
 ];
 
 const HomeSlider = () => {
@@ -36,8 +36,11 @@ const HomeSlider = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "100%", // Adjusted height to fill the container
+        height: "100%", // Set the desired height here
         overflow: "hidden",
+        marginTop: "auto",
+        marginBottom: "auto", // Adjust this value to match your navbar height
+        background: "white", // Adjust this value to match your navbar height
       }}
     >
       <animated.img
@@ -45,8 +48,9 @@ const HomeSlider = () => {
         alt={`Slider Image ${index}`}
         style={{
           width: "100%",
-          height: "100%",
+          height: "auto",
           objectFit: "cover",
+
           ...props,
         }}
       />

@@ -15,12 +15,12 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/home" className="text-white">
-                <Image
-              src="/nav_logo.png"
-              alt="Tech Affairs Logo"
-              width={60}
-              height={60}
-            />
+                  <Image
+                    src="/nav_logo.png"
+                    alt="Tech Affairs Logo"
+                    width={60}
+                    height={60}
+                  />
                 </a>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <a
                   href="/home"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                  style={{ textDecoration: 'none' }}
+                  style={{ textDecoration: "none" }}
                 >
                   Home
                 </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <a
                   href="/clubs"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                  style={{ textDecoration: 'none' }}
+                  style={{ textDecoration: "none" }}
                 >
                   Clubs
                 </a>
@@ -45,14 +45,14 @@ const Navbar = () => {
                 <a
                   href="/about"
                   className="text-white hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                  style={{ textDecoration: 'none' }}
+                  style={{ textDecoration: "none" }}
                 >
                   About
                 </a>
                 <a
                   href="/joy"
                   className="text-white hover:bg-blue-200 hover:text-white rounded-lg p-2"
-                  style={{ textDecoration: 'none' }}
+                  style={{ textDecoration: "none" }}
                 >
                   Joy of giving
                 </a>
@@ -104,7 +104,7 @@ const Navbar = () => {
               <a
                 href="/home"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
               >
                 Home
               </a>
@@ -112,7 +112,7 @@ const Navbar = () => {
               <a
                 href="/clubs"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
               >
                 Clubs
               </a>
@@ -120,14 +120,14 @@ const Navbar = () => {
               <a
                 href="/about"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
               >
                 About
               </a>
               <a
                 href="/joy"
                 className="text-white block hover:bg-blue-200 hover:text-black rounded-lg p-2"
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
               >
                 Joy of giving
               </a>
