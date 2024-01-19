@@ -339,9 +339,9 @@ const CardPage = () => {
             <div className="relative rounded-[50%] bg-black w-[15px] h-[15px]" />
           </div>
           <img
-            className="absolute top-[0px] left-[26px] w-[100vw] h-[979px] object-cover first-img"
+            className="absolute top-[0px] left-[26px] w-[100vw] h-[409px] object-cover first-img"
             alt=""
-            src="/unsplashi6at9f7mwdq@2x.png"
+            src="/pic2.jpeg"
           />
           <div className="absolute w-[calc(100%_+_3px)] top-[0px] right-[0px] left-[0px] [background:linear-gradient(180.03deg,_rgba(0,_0,_0,_0.5),_rgba(0,_0,_0,_0)_51.48%,_#000)] h-[401px]" />
           <b className="absolute top-[308px] left-[calc(50%_-_279px)] weare text-white">
